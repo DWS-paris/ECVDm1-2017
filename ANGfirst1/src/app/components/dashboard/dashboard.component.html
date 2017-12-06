@@ -1,0 +1,16 @@
+<button (click)="toogleList()">Afficher la liste</button>
+
+<ul *ngIf="showList">
+  <li *ngFor="let item of dataArray" >{{item}}</li>
+</ul>
+
+
+<form (submit)="formSubmit()">
+    <input type="text" [(ngModel)]="userObject.userName" name="username">
+    <textarea [(ngModel)]="userObject.userMessage" name="usermessage"></textarea>
+    <button type="submit">Envoyer</button>
+  </form>
+  
+  {{userObject | json}}
+
+<p class="test" [ngClass]="{ 'blueColor': showList }" >Lorem ipsum dolor sit amet consectetur adipisicing elit. Nostrum ut veniam deleniti in suscipit vero alias, laudantium consequatur incidunt iure libero eum rerum quam culpa. Deleniti praesentium cumque fugit ipsa!</p>

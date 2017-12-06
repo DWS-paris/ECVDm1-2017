@@ -1,0 +1,9 @@
+{
+  "posts": [
+    {"id": 0,
+    "type": "IMG", 
+	"title":"Une image de sport", 
+	"content":"http://lorempixel.com/400/200/sports"
+	}
+  ]
+}
